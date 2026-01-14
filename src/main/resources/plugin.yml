@@ -1,0 +1,24 @@
+name: FakePlayer
+version: 1.0.0
+description: A plugin to add and remove fake players that run around and sprint
+main: com.example.fakeplayer.Main
+authors:
+  - troytmoneytr
+
+commands:
+  addbot:
+    description: Add fake players to the server
+    usage: /addbot <number>
+    permission: fakeplayer.addbot
+  removebot:
+    description: Remove fake players from the server
+    usage: /removebot <number>
+    permission: fakeplayer.removebot
+
+permissions:
+  fakeplayer.addbot:
+    description: Allows you to add fake players
+    default: op
+  fakeplayer.removebot:
+    description: Allows you to remove fake players
+    default: op
